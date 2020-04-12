@@ -1,0 +1,23 @@
+﻿{
+  "Description": "You are sitting on the couch and are quite bored..",
+  "ChoicePrompt": "What should I do? ",
+
+  "Choices": [
+    {
+      "Description": "Sit and do nothing",
+      "Link": "do-nothing"
+    },
+    {
+      "Description": "Fight a dragon",
+      "Link": "dragon-fight"
+    },
+    {
+      "Description": "Finish your homework",
+      "Link": "homework"
+    },
+    {
+      "Description": "Quit this game",
+      "Link": "$end"
+    }
+  ]
+}

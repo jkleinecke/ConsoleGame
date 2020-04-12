@@ -1,0 +1,11 @@
+﻿{
+  "Description": "You stare into space and ponder the meaning of life.\n\nThen you realize that what you are doing is pointless...",
+  "ChoicePrompt": "What should I do? ",
+
+  "Choices": [
+    {
+      "Description": "Decide to do something else",
+      "Link": "$previous"
+    }
+  ]
+}
