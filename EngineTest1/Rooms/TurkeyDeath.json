@@ -1,0 +1,14 @@
+{
+"Description": "You have died from getting attacked by choocoos that look like turkeys",
+"ChoicePrompt": "Do you want to restart?",
+ "Choices": [
+    {
+      "Description": "Yes",
+      "Link": "start"
+    },
+    {   
+      "Description": "No",
+      "Link": "$end"
+    }
+	]
+}

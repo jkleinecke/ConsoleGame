@@ -1,0 +1,10 @@
+{
+  "Description": "You broke the window and enter the house only to realize that its not your house and now you have the police arresting you.",
+  "ChoicePrompt": "You seem to have gon to jail...",
+  "Choices": [
+    {
+      "Description": "Respawn",
+      "Link": "start"
+    }
+  ]
+}

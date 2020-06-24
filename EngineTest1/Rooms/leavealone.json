@@ -1,0 +1,14 @@
+{
+  "Description": "You keep climbing for a second then a squirel pops out of the hole glaring at you.",
+  "ChoicePrompt": "What will you do about this?",
+  "Choices": [
+    {
+      "Description": "Keep climbing",
+      "Link": "climbus fastus"
+    },
+    {
+      "Description": "Punch the squirel",
+      "Link": "squirel attack"
+    }
+  ]
+}

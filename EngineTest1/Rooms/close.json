@@ -1,0 +1,14 @@
+{
+  "Description": "you had forgotton that you dont have the key to your house and are now stuck outside...",
+  "ChoicePrompt": "How will you solve this?",
+  "Choices": [
+    {
+      "Description": "Check under the mat for a key",
+      "Link": "open"
+    },
+    {
+      "Description": "Break the window and enter your house",
+      "Link": "breaking and entering"
+    }
+  ]
+}

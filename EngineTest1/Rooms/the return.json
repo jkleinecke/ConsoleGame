@@ -1,0 +1,10 @@
+{
+  "Description": "You are now climbing back down the tree and you are then ambused by an army of squirels while  the one from earlier glares at you violently while the squirels kill you.",
+  "ChoicePrompt": "You should have seen this coming",
+  "Choices": [
+    {
+      "Description": "Respawn",
+      "Link": "start"
+    }
+  ]
+}

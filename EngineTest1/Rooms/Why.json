@@ -1,0 +1,10 @@
+{
+  "Description": "You remove the squirel and realize that you are no longer holding on to the tree and are now plumiting to your death...",
+  "ChoicePrompt": "Rou read the choices... Right?",
+  "Choices": [
+    {
+      "Description": "Respawn",
+      "Link": "start"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "Description": "You go to your bed to sleep after that epic adventure",
+  "ChoicePrompt": "The End",
+  "Choices": [
+    {
+      "Description": "Exit",
+      "Link": "$end"
+    }
+  ]
+}

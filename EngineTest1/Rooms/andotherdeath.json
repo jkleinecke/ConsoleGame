@@ -1,0 +1,10 @@
+{
+  "Description": "You go to investigate only to find out that it was an alligator and it has now ate you",
+  "ChoicePrompt": "Well...",
+  "Choices": [
+    {
+      "Description": "Respawn",
+      "Link": "start"
+    }
+  ]
+}

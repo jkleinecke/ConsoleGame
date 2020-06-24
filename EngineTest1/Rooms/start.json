@@ -4,11 +4,15 @@
 
   "Choices": [
     {
-      "Description": "Sit and do nothing",
+      "Description": "Start the best ADVENTURE",
+      "Link": "example-file"
+    },
+    {
+      "Description": "Chill",
       "Link": "do-nothing"
     },
     {
-      "Description": "Fight a dragon",
+      "Description": "Fart the alphabet with an elf",
       "Link": "dragon-fight"
     },
     {
@@ -16,7 +20,7 @@
       "Link": "homework"
     },
     {
-      "Description": "Quit this game",
+      "Description": "Ignore the other options",
       "Link": "$end"
     }
   ]

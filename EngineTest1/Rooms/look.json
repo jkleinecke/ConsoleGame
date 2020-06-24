@@ -1,0 +1,14 @@
+{
+  "Description": "You investigate the hole and see a squirel that then begins attacking you.",
+  "ChoicePrompt": "How do you handle this?",
+  "Choices": [
+    {
+      "Description": "Fight back",
+      "Link": "Squirel attack"
+    },
+    {
+      "Description": "Die",
+      "Link": "You Died"
+    }
+  ]
+}

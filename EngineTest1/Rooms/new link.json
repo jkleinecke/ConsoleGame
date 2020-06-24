@@ -1,0 +1,18 @@
+{
+  "Description": "You have been climbing for 3 minutes and then you spot a hole in the tree. ",
+  "ChoicePrompt": "What will you do about the hole?",
+  "Choices": [
+    {
+      "Description": "Investigate",
+      "Link": "look"
+    },
+    {
+      "Description": "Ignore",
+      "Link": "leavealone"
+    },
+    {
+      "Description": "Stick your hand in the hole",
+      "Link": "dumb idea"
+    }
+  ]
+}

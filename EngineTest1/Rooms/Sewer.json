@@ -1,0 +1,14 @@
+{
+  "Description": "You jump 4 feet down into the hole wich turns out to be a sewer so what did you expect",
+  "ChoicePrompt": "Now what?",
+  "Choices": [
+    {
+      "Description": "Jump into the grassy... water",
+      "Link": "grass water"
+    },
+    {
+      "Description": "Climb out using the ladder",
+      "Link": "sewerexit"
+    }
+  ]
+}

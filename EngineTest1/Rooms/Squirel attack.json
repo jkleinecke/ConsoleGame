@@ -1,0 +1,10 @@
+{
+  "Description": "You attack the squirel that was glaring at you and then out of nowere an army of squirels come and attack you then killing you",
+  "ChoicePrompt": "... Seriously",
+  "Choices": [
+    {
+      "Description": "Respawn",
+      "Link": "start"
+    }
+  ]
+}

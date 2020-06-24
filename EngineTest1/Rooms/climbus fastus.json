@@ -1,0 +1,10 @@
+{
+  "Description": "You ignore the squirel and keep climbing to the top of the tree.",
+  "ChoicePrompt": "",
+  "Choices": [
+    {
+      "Description": "Continue...",
+      "Link": "Top"
+    }
+  ]
+}

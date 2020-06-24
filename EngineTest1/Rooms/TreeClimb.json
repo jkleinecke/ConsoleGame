@@ -1,0 +1,14 @@
+{
+  "Description": "you walk up to thaat tree and choose whitch side to take",
+  "ChoicePrompt": "What side should you climb? ",
+  "Choices": [
+    {
+      "Description": "The short but dangerous side",
+      "Link": "You died"
+    },
+    {
+      "Description": "The long but safe Side",
+      "Link": "new link"
+    }
+  ]
+}

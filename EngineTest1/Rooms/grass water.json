@@ -1,0 +1,14 @@
+{
+  "Description": "you jump into the water that is sooo discusting and out of nowere you see something jump out of the water.",
+  "ChoicePrompt": "What will you do?",
+  "Choices": [
+    {
+      "Description": "Investigate",
+      "Link": "andotherdeath"
+    },
+    {
+      "Description": "Act dead",
+      "Link": "boom"
+    }
+  ]
+}

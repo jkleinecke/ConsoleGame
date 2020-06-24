@@ -1,0 +1,15 @@
+{
+  "Description": "You walk to the sidewals and see a turkey",
+  "ChoicePrompt": "What should I do to the turkey? ",
+
+  "Choices": [
+    {
+      "Description": "Tickle the turkey",
+      "Link": "TurkeyDeath"
+    },
+    {   
+      "Description": "climb that tree",
+      "Link": "TreeClimb"
+    }
+	]
+}

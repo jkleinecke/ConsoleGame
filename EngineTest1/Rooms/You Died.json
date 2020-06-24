@@ -1,0 +1,10 @@
+{
+  "Description": "You seem to have lost the fight and have died",
+  "ChoicePrompt": "Not Your Choice.",
+  "Choices": [
+    {
+      "Description": "Respawn",
+      "Link": "start"
+    }
+  ]
+}

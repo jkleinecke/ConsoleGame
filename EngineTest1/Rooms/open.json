@@ -1,0 +1,14 @@
+{
+  "Description": "You have found your key and go inside.\r\n",
+  "ChoicePrompt": "What a day.",
+  "Choices": [
+    {
+      "Description": "Sit down",
+      "Link": "relaxation"
+    },
+    {
+      "Description": "Sleep",
+      "Link": "yawn"
+    }
+  ]
+}

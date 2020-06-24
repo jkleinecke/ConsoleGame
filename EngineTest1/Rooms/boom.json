@@ -1,0 +1,10 @@
+{
+  "Description": "You act dead and the object moves in twardes you and then the now known aligatior eates you",
+  "ChoicePrompt": "That was unnexpexted..",
+  "Choices": [
+    {
+      "Description": "Respawn",
+      "Link": "start"
+    }
+  ]
+}

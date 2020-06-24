@@ -1,0 +1,10 @@
+{
+  "Description": "You climb out of the sewer and start walking home.",
+  "ChoicePrompt": "",
+  "Choices": [
+    {
+      "Description": "Continue...",
+      "Link": "close"
+    }
+  ]
+}

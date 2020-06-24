@@ -1,0 +1,14 @@
+{
+  "Description": "You get up and go outside to start an ADVENTURE",
+  "ChoicePrompt": "What should I do next? ",
+  "Choices": [
+    {
+      "Description": "Go to the sidewalk",
+      "Link": "TurkeyEnc"
+    },
+    {
+      "Description": "climb that tree",
+      "Link": "TreeClimb"
+    }
+  ]
+}

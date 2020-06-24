@@ -1,0 +1,14 @@
+{
+  "Description": "You shove your hand into the hole and you fell some pain and pull you hand out and realize that a squirel has attacked you",
+  "ChoicePrompt": "Choices Choices",
+  "Choices": [
+    {
+      "Description": "Fight back",
+      "Link": "Squirel attack"
+    },
+    {
+      "Description": "Use your hands and feet to remove the squirel",
+      "Link": "Why"
+    }
+  ]
+}
