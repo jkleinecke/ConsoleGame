@@ -1,0 +1,11 @@
+﻿{
+  "Description": "After finishing your homework, you feel quite proud of yourself!\n\nPlus your parents are quite happy with you.  Life is good.",
+  "ChoicePrompt": "What should I do? ",
+
+  "Choices": [
+    {
+      "Description": "Decide to do something else",
+      "Link": "$previous"
+    }
+  ]
+}
