@@ -16,10 +16,12 @@ namespace EngineTest1
 
         public void Run()
         {
+
             LoadRoom("start");
 
             while (m_curRoom != null)
             {
+                Console.ResetColor() ;
                 Console.Clear();
 
                 m_curRoom.DisplayDescription();
@@ -39,6 +41,9 @@ namespace EngineTest1
                     case "$end":
                         m_curRoom = null;
                         break;
+                    case "$quit":
+                        return ;
+                        //break ;
                     default:
                         //-- must be a new room, load it
                         LoadRoom(roomLink);

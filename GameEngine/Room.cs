@@ -29,40 +29,89 @@ namespace EngineTest1
         public string GetNextRoomLink()
         {
             Console.Write(ChoicePrompt);
-            int nLeftPos = Console.CursorLeft;
-            int nTopPos = Console.CursorTop;
             Console.WriteLine("\n");
 
-            char chId = 'a';
+            int nLeftPos = Console.CursorLeft;
+            int nTopPos = Console.CursorTop;
 
-            foreach(var option in Choices)
-            {
-                Console.WriteLine("{0}. {1}", chId, option.Description);
-                ++chId;
-            }
-
-            int nIndex = -1;
-            bool bValid = false;
+            int nIndex = 0;
+            bool bSelected = false ;
             do
             {
                 Console.SetCursorPosition(nLeftPos, nTopPos);
+                DisplayChoices(nIndex) ;
+    
+                var keyInfo = Console.ReadKey(true);
 
-                var keyInfo = Console.ReadKey();
-                var selection = keyInfo.KeyChar;
-
-                nIndex = selection - 'a';
-                bValid = nIndex >= 0 && nIndex < Choices.Count;
-
-                if (bValid)
+                switch(keyInfo.Key)
                 {
-                    break;
+                    case ConsoleKey.DownArrow:
+                        // increase the index, wrap back to 0
+                        ++nIndex ;
+
+                        if(nIndex >= Choices.Count)
+                        {
+                            nIndex = 0 ;
+                        }
+                        break ;
+                    case ConsoleKey.UpArrow:
+                        // decrease the index, wrap back to a bottom of the list
+                        --nIndex ;
+
+                        if(nIndex < 0)
+                        {
+                            nIndex = Choices.Count - 1 ;
+                        }
+                        break ;
+                    case ConsoleKey.Spacebar:
+                        bSelected = true ;
+                        break ;
+                    case ConsoleKey.Enter:
+                        bSelected = true ;
+                        break ;
+                    case ConsoleKey.Escape:
+                        return "$quit" ;
+                        //break ;
                 }
 
-                Console.SetCursorPosition(nLeftPos, nTopPos);
                 Console.Write(' ');
-            } while (!bValid);
+            } while (!bSelected);
 
             return Choices[nIndex].Link;
+        }
+
+        private void DisplayChoices(int selectedIndex)
+        {
+            for(int i = 0; i < Choices.Count; ++i)
+            {
+                var option = Choices[i] ;
+
+                if( i == selectedIndex )
+                {
+                    SetConsoleColors_Selected() ;
+                }
+                else
+                {
+                    SetConsoleColors_Normal() ;
+                }
+
+                Console.WriteLine(option.Description) ;
+            }
+
+            SetConsoleColors_Normal() ;
+        }
+
+        private void SetConsoleColors_Selected()
+        {
+            Console.BackgroundColor = ConsoleColor.White ;
+            Console.ForegroundColor = ConsoleColor.Black ;
+        }
+
+        private void SetConsoleColors_Normal()
+        {
+            Console.ResetColor() ;
+            //Console.BackgroundColor = ConsoleColor.Black ;
+            //Console.ForegroundColor = ConsoleColor.White ;
         }
     }
 
