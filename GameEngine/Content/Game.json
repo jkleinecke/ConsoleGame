@@ -1,0 +1,13 @@
+{
+    "Title": "Game Title",
+    "Entrypoint": "start.json",
+    "Inventory": {
+        "Name": "Bag",
+        "Hotkey": "b",
+        "Display": "View contents of (B)ag",
+        "Items" : [{
+            "Id": "sword",
+            "DisplayName": "Sword"
+        }]
+    }
+}

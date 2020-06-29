@@ -22,6 +22,10 @@
     {
       "Description": "Ignore the other options",
       "Link": "$end"
+    },
+    {
+      "Description": "Look for sword",
+      "Link": "findsword"
     }
   ]
 }

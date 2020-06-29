@@ -1,16 +1,15 @@
 ﻿using System;
 
-namespace EngineTest1
+namespace GameEngine
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.CursorVisible = false ;
-
             try {
-            var engine = new Engine();
-            engine.Run();
+                //Console.CursorVisible = false ;
+                var engine = new Engine();
+                engine.Run();
             }
             catch(Exception e)
             {
@@ -18,7 +17,7 @@ namespace EngineTest1
                 Console.WriteLine("Crash: {0}", e.ToString()) ;
             }
 
-            Console.CursorVisible = true ;
+            //Console.CursorVisible = true ;
         }
     }
 }

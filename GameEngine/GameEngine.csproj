@@ -7,15 +7,15 @@
 
   
   <ItemGroup>
-    <RoomFiles Include="Rooms\*.json" />
+    <ContentFiles Include="Content\**\*.json" />
   </ItemGroup>
   <ItemGroup>
-    <None Update="@(RoomFiles)">
+    <None Update="@(ContentFiles)">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="@(RoomFiles)">
+    <Content Include="@(ContentFiles)">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

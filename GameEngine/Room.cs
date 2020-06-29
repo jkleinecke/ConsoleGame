@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Text.Json.Serialization;
 
-namespace EngineTest1
+namespace GameEngine
 {
     public class Room
     {
@@ -26,7 +26,7 @@ namespace EngineTest1
 
         }
 
-        public string GetNextRoomLink()
+        public string GetNextRoomLink(Game game)
         {
             Console.Write(ChoicePrompt);
             Console.WriteLine("\n");
@@ -40,41 +40,49 @@ namespace EngineTest1
             {
                 Console.SetCursorPosition(nLeftPos, nTopPos);
                 DisplayChoices(nIndex) ;
+                Console.WriteLine() ;
+                Console.WriteLine("{0}", game.Inventory.Display) ;
     
                 var keyInfo = Console.ReadKey(true);
 
-                switch(keyInfo.Key)
+                if(keyInfo.KeyChar.ToString().ToUpper() == game.Inventory.Hotkey.ToUpper())
                 {
-                    case ConsoleKey.DownArrow:
-                        // increase the index, wrap back to 0
-                        ++nIndex ;
-
-                        if(nIndex >= Choices.Count)
-                        {
-                            nIndex = 0 ;
-                        }
-                        break ;
-                    case ConsoleKey.UpArrow:
-                        // decrease the index, wrap back to a bottom of the list
-                        --nIndex ;
-
-                        if(nIndex < 0)
-                        {
-                            nIndex = Choices.Count - 1 ;
-                        }
-                        break ;
-                    case ConsoleKey.Spacebar:
-                        bSelected = true ;
-                        break ;
-                    case ConsoleKey.Enter:
-                        bSelected = true ;
-                        break ;
-                    case ConsoleKey.Escape:
-                        return "$quit" ;
-                        //break ;
+                    // user selected the inventory screen instead
+                    return "$inventory" ;
                 }
+                else
+                {
+                    switch(keyInfo.Key)
+                    {
+                        case ConsoleKey.DownArrow:
+                            // increase the index, wrap back to 0
+                            ++nIndex ;
 
-                Console.Write(' ');
+                            if(nIndex >= Choices.Count)
+                            {
+                                nIndex = 0 ;
+                            }
+                            break ;
+                        case ConsoleKey.UpArrow:
+                            // decrease the index, wrap back to a bottom of the list
+                            --nIndex ;
+
+                            if(nIndex < 0)
+                            {
+                                nIndex = Choices.Count - 1 ;
+                            }
+                            break ;
+                        case ConsoleKey.Spacebar:
+                            bSelected = true ;
+                            break ;
+                        case ConsoleKey.Enter:
+                            bSelected = true ;
+                            break ;
+                        case ConsoleKey.Escape:
+                            return "$quit" ;
+                            //break ;
+                    }
+                }
             } while (!bSelected);
 
             return Choices[nIndex].Link;

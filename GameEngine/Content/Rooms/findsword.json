@@ -1,0 +1,14 @@
+{
+    "Description": "After searching through your extremely dirty room (you really should clean it... gross), you find your sword.",
+    "ChoicePrompt": "What should I do next? ",
+    "Choices": [
+      {
+        "Description": "Pick it up",
+        "Link": "$pickup:sword"
+      },
+      {
+        "Description": "Leave it",
+        "Link": "$previous"
+      }
+    ]
+  }

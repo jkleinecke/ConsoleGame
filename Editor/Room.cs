@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Text.Json.Serialization;
 
-namespace EngineTest1
+namespace GameEngine
 {
     public class Room
     {
